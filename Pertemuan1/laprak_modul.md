@@ -25,7 +25,7 @@ Tipe data map (juga dikenal sebagai dictionary atau hash table) adalah struktur 
 ## Guided 
 
 ### 1. [Tipe Data Primitif]
-
+ ```C++
 #include <iostream> // Library untuk input - output standar
 #include <iomanip> // Library untuk manipulasi output
 
