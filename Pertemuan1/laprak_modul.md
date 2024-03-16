@@ -114,7 +114,7 @@ int main()
 Program di atas adalah sebuah program dalam bahasa pemrograman C yang mendefinisikan sebuah struktur data Mahasiswa untuk merepresentasikan informasi mengenai mahasiswa, seperti nama, alamat, dan usia. Program kemudian membuat dua variabel bertipe struct Mahasiswa, yaitu mhs1 dan mhs2, dan mengisi data untuk kedua mahasiswa tersebut. Setelah itu, program menampilkan informasi mengenai kedua mahasiswa tersebut ke layar.
 
 ### 3. [Tipe Data koleksi]
-
+```C++
 #include <iostream> // Library standar untuk input-output
 #include <array> // Library untuk menggunakan array STL (Standard Template Library)
 using namespace std; // Menggunakan namespace std untuk mengakses fungsi-fungsi standar
@@ -138,6 +138,7 @@ int main() {
     
     return 0; // Mengembalikan nilai 0 sebagai indikasi program berakhir dengan sukses
 }
+```
 Program di atas adalah contoh penggunaan array dalam bahasa pemrograman C++. Array adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai yang serupa dengan tipe data yang sama. Dalam program ini, kita menggunakan array untuk menyimpan beberapa nilai integer.
 
 ## Unguided 
@@ -146,7 +147,8 @@ Program di atas adalah contoh penggunaan array dalam bahasa pemrograman C++. Arr
 Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari 
 materi tipe data primitif!]
 
-```#include <iostream> // Library standar untuk input-output
+```C++
+#include <iostream> // Library standar untuk input-output
 #include <iomanip> // Library untuk manipulasi output
 
 
@@ -186,7 +188,6 @@ int main(){
     }
     return 0; // Mengembalikan nilai 0 sebagai indikasi program berakhir dengan sukses
 }
-
 ```
 #### Output:
 ![Screenshot Unguided 1](<Screenshot 2024-03-12 102510-1.png>)
@@ -194,7 +195,7 @@ int main(){
 Program di atas adalah sebuah kalkulator sederhana untuk menghitung luas persegi dan lingkaran.
 
 ### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya]
-
+```C++
 #include <iostream> // Library standar untuk input-output
 #include <iomanip> // Library untuk manipulasi output
 
@@ -224,14 +225,14 @@ int main(){
 
     return 0; // Mengembalikan nilai 0 sebagai indikasi program berakhir dengan sukses
 }
-
+```
 #### Output
 ![Screenshot Unguided 2](<Screenshot 2024-03-12 105506.png>)
 
 Program diatas mengimplentasikan tipe data class mahasiswa dengan variabel nama dan umur
 
 ### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya]
-
+```C++
 #include <iostream> // Library standar untuk input-output
 #include <iomanip> // Library untuk manipulasi output
 
@@ -258,14 +259,14 @@ int main(){
 
     return 0; // Mengembalikan nilai 0 sebagai indikasi program berakhir dengan sukses
 }
-
+```
 #### Output
 ![Screenshot Unguided 2](<Screenshot 2024-03-12 114336.png>)
 
 Program di atas merupakan contoh penggunaan struktur (struct) dalam bahasa pemrograman C++. dengan mengimplementasikan variabel barang dan harga.
 
 ### 3. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.]
-
+```C++
 #include <iostream> // Library standar untuk input-output
 #include <map> // Library untuk menggunakan map
 #include <iomanip> // Library untuk manipulasi output
@@ -313,7 +314,7 @@ int main() {
     }
     return 0; // Mengembalikan nilai 0 sebagai indikasi program berakhir dengan sukses
 }
-
+```
 #### Output
 ![Screenshot Unguided 3](<Screenshot 2024-03-12 114851.png>)
 
