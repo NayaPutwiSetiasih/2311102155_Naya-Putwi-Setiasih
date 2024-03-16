@@ -73,7 +73,7 @@ default:
 Program di atas adalah kalkulator sederhana yang meminta pengguna untuk memasukkan operator dan dua operand, kemudian melakukan operasi aritmatika sesuai dengan operator yang dimasukkan.
 
 ### 2. [Tipe Data Abstrak]
-
+```C++
 #include <stdio.h> // Library standar untuk fungsi input-output
 #include <string.h> // Library untuk fungsi manipulasi string
 
@@ -110,7 +110,7 @@ int main()
     printf("Umur: %d\n", mhs2.age); // Menampilkan usia mahasiswa mhs2
     return 0; // Mengembalikan nilai 0 sebagai indikasi program berakhir dengan sukses
 }
-
+```
 Program di atas adalah sebuah program dalam bahasa pemrograman C yang mendefinisikan sebuah struktur data Mahasiswa untuk merepresentasikan informasi mengenai mahasiswa, seperti nama, alamat, dan usia. Program kemudian membuat dua variabel bertipe struct Mahasiswa, yaitu mhs1 dan mhs2, dan mengisi data untuk kedua mahasiswa tersebut. Setelah itu, program menampilkan informasi mengenai kedua mahasiswa tersebut ke layar.
 
 ### 3. [Tipe Data koleksi]
