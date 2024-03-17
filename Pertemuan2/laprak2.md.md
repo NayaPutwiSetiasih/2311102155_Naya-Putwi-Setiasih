@@ -3,7 +3,27 @@
 
 ## Dasar Teori
 
-Berikan penjelasan teori terkait materi modul ini dengan bahasa anda sendiri serta susunan yang terstruktur per topiknya.
+Array atau larik sendiri di definisikan sebagai pemesanan alokasi memory berurutan. struktur array adalah kumpulan elemen-elemen data yang digabungkan menjadi suatu kesatuan yang memiliki tipe homogen (sama). Array merupakan suatu tipe data yang berisi kumpulan nilai atau tipe data lain, misalnya seperti integer, string, number, boolean, floating dan lain-lain, selain itu Array juga digunakan untuk menampung banyak nilai dalam satu variabel. Array memiliki beberapa jenis yaitu :
+1. Array Satu Dimensi
+Array satu dimensi yaitu kumpulan elemen-elemen identik yang hanya terdiri dari satu baris atau hanya satu kolom saja alamat penyimpanan data (indeks). Elemen-elemen tersebut memiliki tipe data yang sama, tetapi isi dari elemen tersebut boleh berbeda.
+contoh pada progam : int ukur[5] = {39, 40. 41, 38, 40};·   
+int adalah tipe data yang berupa bilangan bulat.·         
+Ukur adalah nama variabel array.·        
+[5] adalah ukuran untuk menyatakan jumlah maksimal elemen array
+{..} adalah tempat pemberian nilai/elemen array
+2.  Array Dua Dimensi
+Array dua dimensi sering digambarkan sebagai sebuah matriks, merupakan perluasan dari array satu dimensi. Jika array satu dimensi hanya terdiri dari sebuah baris dan beberapa kolom elemen, maka array dua dimensiterdiri dari beberapa baris dan beberapa kolom elemen bertipe sama sehingga dapat digambarkan sebagai berikut :
+Bentuk umum :Tipe_data namaArray [m][n] = {{a,b,...z},{1,2,...,n-1}};
+contoh : int lulus[4][3];·         
+Nilai 4 untuk menyatakan banyaknya baris dan 3 untuk menyatakan banyaknya kolom.
+3.  Array MultiDimensi
+Array ini seperti array dimensi dua tetapi dapat memiliki ukuran yang lebih besar. Sebenarnya array dimensi banyak ini tidak terlalu sering digunakan, tetapi sewaktu-waktu kalau dimensi yang dibutuhkan banyak, maka array ini sangat memegang peranan yang penting. 
+contoh :int data_huruf[2][8][8];
+4.  Array Empat Dimensi
+contoh : int arr [3][2][4][4];
+5. Array Lima Dimensi
+contoh : int arr [2][4][4][3][3];
+
 
 ## Guided 
 
@@ -299,4 +319,5 @@ Program ini meminta pengguna untuk memasukkan panjang array dan elemen array. Ke
 Array adalah salah satu jenis variabel pada bahasa pemrograman yang memungkinkan kita untuk menyimpan sekumpulan data dengan tipe yang sama dalam satu variabel. Data dalam array dapat diakses dengan menggunakan indeks atau nomor urut yang dimulai dari 0.Secara umum, terdapat dua jenis array yaitu array satu dimensi dan array multi dimensi. Array satu dimensi merupakan array yang terdiri dari satu baris data, sedangkan array multi dimensi terdiri dari beberapa baris dan kolom.Untuk mendeklarasikan sebuah array pada bahasa pemrograman, kita harus menentukan tipe data elemen array dan ukuran array.
 
 ## Referensi
-[1] I. Holm, Narrator, and J. Fullerton-Smith, Producer, How to Build a Human [DVD]. London: BBC; 2002.
+[1] LESTARI, K. (2019). STATIS ARRAY.
+[2] Suryana, T. (2021). Bab 4. Penggunaan Array Dan Method Dalam Array.
