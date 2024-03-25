@@ -617,8 +617,8 @@ using namespace std;
 
 // Node untuk menyimpan data produk
 struct Node {
-    string namaProduk;
-    int harga;
+    string namaProduk_Naya2155;
+    int harga_Naya2155;
     Node* prev;
     Node* next;
 };
@@ -639,8 +639,8 @@ public:
     // Fungsi untuk menambahkan data di belakang
     void insertBack(string namaProduk, int harga) {
         Node* newNode = new Node;
-        newNode->namaProduk = namaProduk;
-        newNode->harga = harga;
+        newNode->namaProduk_Naya2155 = namaProduk;
+        newNode->harga_Naya2155 = harga;
         newNode->prev = tail;
         newNode->next = nullptr;
 
@@ -653,20 +653,20 @@ public:
     }
 
     // Fungsi untuk menambahkan data di antara dua node tertentu
-    void insertBetween(string prevNama, string nextNama, string namaProduk, int harga) {
+    void insertBetween(string prevNama_Naya2155, string nextNama_Naya2155, string namaProduk_Naya2155, int harga_Naya2155) {
         Node* temp = head;
-        while (temp != nullptr && temp->namaProduk != prevNama) {
+        while (temp != nullptr && temp->namaProduk_Naya2155 != prevNama_Naya2155) {
             temp = temp->next;
         }
 
         if (temp == nullptr) {
-            cout << "Node dengan nama " << prevNama << " tidak ditemukan" << endl;
+            cout << "Node dengan nama " << prevNama_Naya2155 << " tidak ditemukan" << endl;
             return;
         }
 
         Node* newNode = new Node;
-        newNode->namaProduk = namaProduk;
-        newNode->harga = harga;
+        newNode->namaProduk_Naya2155 = namaProduk_Naya2155;
+        newNode->harga_Naya2155 = harga_Naya2155;
         newNode->prev = temp;
         newNode->next = temp->next;
         temp->next = newNode;
@@ -678,14 +678,14 @@ public:
     }
 
     // Fungsi untuk menghapus node
-    void deleteNode(string namaProduk) {
+    void deleteNode(string namaProduk_Naya2155) {
         Node* temp = head;
-        while (temp != nullptr && temp->namaProduk != namaProduk) {
+        while (temp != nullptr && temp->namaProduk_Naya2155 != namaProduk_Naya2155) {
             temp = temp->next;
         }
 
         if (temp == nullptr) {
-            cout << "Node dengan nama " << namaProduk << " tidak ditemukan" << endl;
+            cout << "Node dengan nama " << namaProduk_Naya2155 << " tidak ditemukan" << endl;
             return;
         }
 
@@ -705,19 +705,19 @@ public:
     }
 
     // Fungsi untuk mengupdate data node
-    void updateNode(string namaProduk, string newNama, int newHarga) {
+    void updateNode(string namaProduk_Naya2155, string newNama_Naya2155, int newHarga_Naya2155) {
         Node* temp = head;
-        while (temp != nullptr && temp->namaProduk != namaProduk) {
+        while (temp != nullptr && temp->namaProduk_Naya2155 != namaProduk_Naya2155) {
             temp = temp->next;
         }
 
         if (temp == nullptr) {
-            cout << "Node dengan nama " << namaProduk << " tidak ditemukan" << endl;
+            cout << "Node dengan nama " << namaProduk_Naya2155 << " tidak ditemukan" << endl;
             return;
         }
 
-        temp->namaProduk = newNama;
-        temp->harga = newHarga;
+        temp->namaProduk_Naya2155 = newNama_Naya2155;
+        temp->harga_Naya2155 = newHarga_Naya2155;
     }
 
     // Fungsi untuk menampilkan semua data
@@ -725,7 +725,7 @@ public:
         Node* temp = head;
         cout << "Nama Produk\tHarga" << endl;
         while (temp != nullptr) {
-            cout << temp->namaProduk << "\t\t" << temp->harga << endl;
+            cout << temp->namaProduk_Naya2155 << "\t\t" << temp->harga_Naya2155 << endl;
             temp = temp->next;
         }
     }
@@ -752,56 +752,56 @@ int main() {
     cout << "7. Tampilkan Data" << endl;
     cout << "8. Exit" << endl;
 
-    int choice;
+    int choice_Naya2155;
     do {
         cout << "Pilihan Anda: ";
-        cin >> choice;
-        switch (choice) {
+        cin >> choice_Naya2155;
+        switch (choice_Naya2155) {
             case 1: {
-                string namaProduk;
-                int harga;
+                string namaProduk_Naya2155;
+                int harga_Naya2155;
                 cout << "Masukkan Nama Produk: ";
                 cin.ignore();
-                getline(cin, namaProduk);
+                getline(cin, namaProduk_Naya2155);
                 cout << "Masukkan Harga: ";
-                cin >> harga;
-                list.insertBack(namaProduk, harga);
+                cin >> harga_Naya2155;
+                list.insertBack(namaProduk_Naya2155, harga_Naya2155);
                 break;
             }
             case 2: {
-                string namaProduk;
+                string namaProduk_Naya2155;
                 cout << "Masukkan Nama Produk yang Ingin Dihapus: ";
                 cin.ignore();
-                getline(cin, namaProduk);
-                list.deleteNode(namaProduk);
+                getline(cin, namaProduk_Naya2155);
+                list.deleteNode(namaProduk_Naya2155);
                 break;
             }
             case 3: {
-                string namaProduk, newNama;
-                int harga, newHarga;
+                string namaProduk_Naya2155, newNama_Naya2155;
+                int harga_Naya2155, newHarga_Naya2155;
                 cout << "Masukkan Nama Produk yang Ingin Diupdate: ";
                 cin.ignore();
-                getline(cin, namaProduk);
+                getline(cin, namaProduk_Naya2155);
                 cout << "Masukkan Nama Produk Baru: ";
-                getline(cin, newNama);
+                getline(cin, newNama_Naya2155);
                 cout << "Masukkan Harga Baru: ";
-                cin >> newHarga;
-                list.updateNode(namaProduk, newNama, newHarga);
+                cin >> newHarga_Naya2155;
+                list.updateNode(namaProduk_Naya2155, newNama_Naya2155, newHarga_Naya2155);
                 break;
             }
             case 4: {
-                string prevNama, nextNama, namaProduk;
-                int harga;
+                string prevNama_Naya2155, nextNama_Naya2155, namaProduk_Naya2155;
+                int harga_Naya2155;
                 cout << "Masukkan Nama Produk Sebelum: ";
                 cin.ignore();
-                getline(cin, prevNama);
+                getline(cin, prevNama_Naya2155);
                 cout << "Masukkan Nama Produk Setelah: ";
-                getline(cin, nextNama);
+                getline(cin, nextNama_Naya2155);
                 cout << "Masukkan Nama Produk Baru: ";
-                getline(cin, namaProduk);
+                getline(cin, namaProduk_Naya2155);
                 cout << "Masukkan Harga Baru: ";
-                cin >> harga;
-                list.insertBetween(prevNama, nextNama, namaProduk, harga);
+                cin >> harga_Naya2155;
+                list.insertBetween(prevNama_Naya2155, nextNama_Naya2155, namaProduk_Naya2155, harga_Naya2155);
                 break;
             }
             case 5: {
@@ -826,7 +826,7 @@ int main() {
                 break;
             }
         }
-    } while (choice != 8);
+    } while (choice_Naya2155 != 8);
     return 0;
 }
 ```
