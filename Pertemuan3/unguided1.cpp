@@ -3,8 +3,8 @@ using namespace std;
 
 // Node untuk menyimpan data mahasiswa
 struct Node {
-    string nama;
-    int usia;
+    string nama_Naya2155;
+    int usia_Naya2155;
     Node* next;
 };
 
@@ -20,19 +20,19 @@ public:
     }
 
     // Fungsi untuk menyisipkan node di depan
-    void insertFront(string nama, int usia) {
+    void insertFront(string nama_Naya2155, int usia_Naya2155) {
         Node* newNode = new Node;
-        newNode->nama = nama;
-        newNode->usia = usia;
+        newNode->nama_Naya2155 = nama_Naya2155;
+        newNode->usia_Naya2155 = usia_Naya2155;
         newNode->next = head;
         head = newNode;
     }
 
     // Fungsi untuk menyisipkan node di belakang
-    void insertBack(string nama, int usia) {
+    void insertBack(string nama_Naya2155, int usia_Naya2155) {
         Node* newNode = new Node;
-        newNode->nama = nama;
-        newNode->usia = usia;
+        newNode->nama_Naya2155 = nama_Naya2155;
+        newNode->usia_Naya2155 = usia_Naya2155;
         newNode->next = nullptr;
 
         if (head == nullptr) {
@@ -48,9 +48,9 @@ public:
     }
 
     // Fungsi untuk menyisipkan node setelah node tertentu
-    void insertAfter(string key, string nama, int usia) {
+    void insertAfter(string key, string nama_Naya2155, int usia_Naya2155) {
         Node* temp = head;
-        while (temp != nullptr && temp->nama != key) {
+        while (temp != nullptr && temp->nama_Naya2155 != key) {
             temp = temp->next;
         }
 
@@ -60,8 +60,8 @@ public:
         }
 
         Node* newNode = new Node;
-        newNode->nama = nama;
-        newNode->usia = usia;
+        newNode->nama_Naya2155 = nama_Naya2155;
+        newNode->usia_Naya2155 = usia_Naya2155;
         newNode->next = temp->next;
         temp->next = newNode;
     }
@@ -71,13 +71,13 @@ public:
         Node* temp = head;
         Node* prev = nullptr;
 
-        if (temp != nullptr && temp->nama == key) {
+        if (temp != nullptr && temp->nama_Naya2155 == key) {
             head = temp->next;
             delete temp;
             return;
         }
 
-        while (temp != nullptr && temp->nama != key) {
+        while (temp != nullptr && temp->nama_Naya2155 != key) {
             prev = temp;
             temp = temp->next;
         }
@@ -94,7 +94,7 @@ public:
     // Fungsi untuk mengubah data node
     void updateNode(string key, string newNama, int newUsia) {
         Node* temp = head;
-        while (temp != nullptr && temp->nama != key) {
+        while (temp != nullptr && temp->nama_Naya2155 != key) {
             temp = temp->next;
         }
 
@@ -103,15 +103,15 @@ public:
             return;
         }
 
-        temp->nama = newNama;
-        temp->usia = newUsia;
+        temp->nama_Naya2155 = newNama;
+        temp->usia_Naya2155 = newUsia;
     }
 
     // Fungsi untuk menampilkan semua data
     void display() {
         Node* temp = head;
         while (temp != nullptr) {
-            cout << temp->nama << " " << temp->usia << endl;
+            cout << temp->nama_Naya2155 << " " << temp->usia_Naya2155 << endl;
             temp = temp->next;
         }
     }

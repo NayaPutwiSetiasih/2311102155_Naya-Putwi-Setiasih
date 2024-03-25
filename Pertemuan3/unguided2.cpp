@@ -127,11 +127,6 @@ int main() {
     list.insertBack("Wardah", 50000);
     list.insertBack("Hanasui", 30000);
 
-    // Operasi sesuai dengan kasus yang diberikan
-    list.insertBetween("Somethinc", "Skintific", "Azarine", 65000);
-    list.deleteNode("Wardah");
-    list.updateNode("Hanasui", "Cleora", 55000);
-
     // Tampilkan menu
     cout << "Toko Skincare Purwokerto" << endl;
     cout << "1. Tambah Data" << endl;
