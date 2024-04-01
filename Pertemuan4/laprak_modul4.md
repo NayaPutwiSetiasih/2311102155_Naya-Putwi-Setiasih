@@ -1141,60 +1141,60 @@ int main() {
 }
 ```
 #### Output:
-- Tampilan Menu
-![Screenshot tampilan menu](<Screenshot 2024-03-31 122508.png>)
-- Tambah Depan
+### Tampilan Menu 
+![Screenshot tampilan menu](<Screenshot 2024-03-31 122508.png>) 
+### Tambah Depan
 ![Screenshot tambah depan](<Screenshot 2024-03-31 122908.png>)
-- Tambah Belakang
+### Tambah Belakang
 ![Screenshot tambah belakang](<Screenshot 2024-03-31 123117.png>)
-- Tambah Tengah
+### Tambah Tengah
 ![Screenshot tambah tengah](<Screenshot 2024-03-31 123228.png>)
-- Hapus Depan
+### Hapus Depan
 ![Screenshot Hapus depan](<Screenshot 2024-03-31 124138.png>)
-- Hapus Tengah
+### Hapus Tengah
 ![Screenshot Hapus Tengah](<Screenshot 2024-03-31 124511.png>)
-- Hapus Belakang
+### Hapus Belakang
 ![Screenshot hapus belakang](<Screenshot 2024-03-31 124701.png>)
-- Ubah Depan
+### Ubah Depan
 ![Screenshot ubah depan](<Screenshot 2024-03-31 131142.png>)Depan
-- Ubah Belakang
+### Ubah Belakang
 ![Screenshot ubah belakang](<Screenshot 2024-03-31 131335.png>)
-- Ubah Tengah
+### Ubah Tengah
 ![Screenshot ubah tengah](<Screenshot 2024-03-31 131508.png>)
-- Tampilan Data
+### Tampilan Data
 ![Screenshot tampilan data](<Screenshot 2024-03-31 131651.png>)
 
-2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu 
+### 2. Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu 
 tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau 
 tengah)
 ![Screenshot Tampilan Data](<Screenshot 2024-03-31 132635.png>)
 
-3. Lakukan perintah berikut :
-a. Tambahkan data berikut diantara Farrel dan Denis
-    Wati : 2330004
+### 3. Lakukan perintah berikut :
+### a. Tambahkan data berikut diantara Farrel dan Denis
+### Wati : 2330004
 ![Screenshot ](<Screenshot 2024-03-31 133058.png>)
-b. Hapus data Denis
+### b. Hapus data Denis
 ![Screenshot](<Screenshot 2024-03-31 134114.png>)
-c. Tambahkan data berikut di awal :
-    Owi : 2330000
+### c. Tambahkan data berikut di awal :
+### Owi : 2330000
 ![Screenshot](<Screenshot 2024-03-31 134241.png>)
-d. tambahkan data berikut di akhir :
-    David : 23300100
+### d. tambahkan data berikut di akhir :
+### David : 23300100
 ![Screenshot](<Screenshot 2024-03-31 134354.png>)
-e. Ubah data Udin menjadi data berikut ini :
-    Idin : 23300045
+### e. Ubah data Udin menjadi data berikut ini :
+### Idin : 23300045
 ![Screenshot](<Screenshot 2024-03-31 134527.png>)
-f. Ubah data terakhir menjadi berikut :
-    Lucy : 23300101
+### f. Ubah data terakhir menjadi berikut :
+### Lucy : 23300101
 ![Screenshot](<Screenshot 2024-03-31 134645.png>)
-g. Hapus data awal
+### g. Hapus data awal
 ![Screenshot](<Screenshot 2024-03-31 134730.png>)
-h. Ubah data awal menjadi berikut :
-    Bagas : 2330002
+### h. Ubah data awal menjadi berikut :
+### Bagas : 2330002
 ![Screenshot](<Screenshot 2024-03-31 134833.png>)
-i. Hapus data akhir
+### i. Hapus data akhir
 ![Screenshot](<Screenshot 2024-03-31 134914.png>)
-j. Tampilkan seluruh data
+### j. Tampilkan seluruh data
 ![Screenshot](<Screenshot 2024-03-31 135002.png>)
 
 Program ini adalah implementasi dari struktur data linked list non-circular dalam bahasa pemrograman C++. Linked list adalah struktur data linear yang terdiri dari simpul-simpul yang saling terhubung melalui pointer. Setiap simpul memiliki dua data utama, yaitu nama dan NIM mahasiswa, serta sebuah pointer yang menunjuk ke simpul berikutnya.
