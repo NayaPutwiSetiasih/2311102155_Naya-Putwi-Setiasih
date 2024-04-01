@@ -228,6 +228,7 @@ void ubahTengah(int data, int posisi)
         cout << "List masih kosong!" << endl;
     }
 }
+  
 // Ubah Belakang
 void ubahBelakang(int data)
 {
