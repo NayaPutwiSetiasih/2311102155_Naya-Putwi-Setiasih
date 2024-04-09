@@ -6,61 +6,61 @@ using namespace std;
 // Define Mahasiswa class
 class Mahasiswa {
 public:
-    string nim;
-    int nilai;
-    Mahasiswa(string nim, int nilai) : nim(nim), nilai(nilai) {}
+    string nim_155;
+    int nilai_155;
+    Mahasiswa(string nim_155, int nilai_155) : nim_155(nim_155), nilai_155(nilai_155) {}
 };
 
 class HashMap {
 private:
     static const int tableSize = 10;
-    vector<Mahasiswa*>* table[tableSize]; // Vector of pointers to Mahasiswa objects
+    vector<Mahasiswa*>* table_155[tableSize]; // Vector of pointers to Mahasiswa objects
 
 public:
     HashMap() {
         for (int i = 0; i < tableSize; ++i) {
-            table[i] = nullptr;
+            table_155[i] = nullptr;
         }
     }
 
-    int hashFunction(string key) {
+    int hashFunction(string key_155) {
         int hash = 0;
-        for (int i = 0; i < key.length(); ++i) {
-            hash += key[i];
+        for (int i = 0; i<key_155.length(); ++i) {
+            hash += key_155[i];
         }
         return hash % tableSize;
     }
 
-    void tambahData(string nim, int nilai) {
-        int index = hashFunction(nim);
-        if (table[index] == nullptr) {
-            table[index] = new vector<Mahasiswa*>; // Initialize vector if null
+    void tambahData(string nim_155, int nilai_155) {
+        int index = hashFunction(nim_155);
+        if (table_155[index] == nullptr) {
+            table_155[index] = new vector<Mahasiswa*>; // Initialize vector if null
         }
-        table[index]->push_back(new Mahasiswa(nim, nilai)); // Push new Mahasiswa object
+        table_155[index]->push_back(new Mahasiswa(nim_155, nilai_155)); // Push new Mahasiswa object
     }
 
-    void cariDataDenganNIM(string nim) {
-        int index = hashFunction(nim);
-        if (table[index] == nullptr) {
+    void cariDataDenganNIM(string nim_155) {
+        int index = hashFunction(nim_155);
+        if (table_155[index] == nullptr) {
             cout << "Data tidak ditemukan" << endl;
             return;
         }
-        for (auto& mahasiswa : *table[index]) {
-            if (mahasiswa->nim == nim) {
-                cout << "NIM: " << mahasiswa->nim << ", Nilai: " << mahasiswa->nilai << endl;
+        for (auto& mahasiswa : *table_155[index]) {
+            if (mahasiswa->nim_155 == nim_155) {
+                cout << "NIM: " << mahasiswa->nim_155 << ", Nilai: " << mahasiswa->nilai_155 << endl;
                 return;
             }
         }
         cout << "Data tidak ditemukan" << endl;
     }
 
-    void cariDataDenganNilai(int minimalNilai, int maksimalNilai) {
+    void cariDataDenganNilai(int minimalNilai_155, int maksimalNilai_155) {
         bool temukan = false;
         for (int i = 0; i < tableSize; ++i) {
-            if (table[i] != nullptr) {
-                for (auto& mahasiswa : *table[i]) {
-                    if (mahasiswa->nilai >= minimalNilai && mahasiswa->nilai <= maksimalNilai) {
-                        cout << "NIM: " << mahasiswa->nim << ", Nilai: " << mahasiswa->nilai << endl;
+            if (table_155[i] != nullptr) {
+                for (auto& mahasiswa : *table_155[i]) {
+                    if (mahasiswa->nilai_155 >= minimalNilai_155 && mahasiswa->nilai_155 <= maksimalNilai_155) {
+                        cout << "NIM: " << mahasiswa->nim_155 << ", Nilai: " << mahasiswa->nilai_155 << endl;
                         temukan = true;
                     }
                 }
@@ -71,16 +71,16 @@ public:
         }
     }
 
-    void hapusData(string nim) {
-        int index = hashFunction(nim);
-        if (table[index] == nullptr) {
+    void hapusData(string nim_155) {
+        int index = hashFunction(nim_155);
+        if (table_155[index] == nullptr) {
             cout << "Data tidak ditemukan" << endl;
             return;
         }
-        for (auto it = table[index]->begin(); it != table[index]->end(); ++it) {
-            if ((*it)->nim == nim) {
+        for (auto it = table_155[index]->begin(); it != table_155[index]->end(); ++it) {
+            if ((*it)->nim_155 == nim_155) {
                 delete *it; // Delete object
-                table[index]->erase(it); // Erase pointer from vector
+                table_155[index]->erase(it); // Erase pointer from vector
                 cout << "Data berhasil dihapus" << endl;
                 return;
             }
@@ -90,9 +90,9 @@ public:
 
     void tampilkanSemuaData() {
         for (int i = 0; i < tableSize; ++i) {
-            if (table[i] != nullptr) {
-                for (auto& mahasiswa : *table[i]) {
-                    cout << "NIM: " << mahasiswa->nim << ", Nilai: " << mahasiswa->nilai << endl;
+            if (table_155[i] != nullptr) {
+                for (auto& mahasiswa : *table_155[i]) {
+                    cout << "NIM: " << mahasiswa->nim_155 << ", Nilai: " << mahasiswa->nilai_155 << endl;
                 }
             }
         }
@@ -101,9 +101,9 @@ public:
 
 int main() {
     HashMap hashMap;
-    int choice;
-    string nim;
-    int nilai, minimalNilai, maksimalNilai;
+    int choice_155;
+    string nim_155;
+    int nilai_155, minimalNilai_155, maksimalNilai_155;
 
     do {
         cout << "\nPROGRAM HASH TABLE DATA MAHASISWA" << endl;
@@ -114,30 +114,30 @@ int main() {
         cout << "5. Tampilkan Data" << endl;
         cout << "0. Keluar" << endl;
         cout << "Pilih Operasi: ";
-        cin >> choice;
+        cin >> choice_155;
 
-        switch (choice) {
+        switch (choice_155) {
             case 1:
                 cout << "Masukkan NIM: ";
-                cin >> nim;
+                cin >> nim_155;
                 cout << "Masukkan Nilai: ";
-                cin >> nilai;
-                hashMap.tambahData(nim, nilai);
+                cin >> nilai_155;
+                hashMap.tambahData(nim_155, nilai_155);
                 break;
             case 2:
                 cout << "Masukkan NIM: ";
-                cin >> nim;
-                hashMap.cariDataDenganNIM(nim);
+                cin >> nim_155;
+                hashMap.cariDataDenganNIM(nim_155);
                 break;
             case 3:
                 cout << "Masukkan Rentang Nilai (Minimal Maksimal): ";
-                cin >> minimalNilai >> maksimalNilai;
-                hashMap.cariDataDenganNilai(minimalNilai, maksimalNilai);
+                cin >> minimalNilai_155 >> maksimalNilai_155;
+                hashMap.cariDataDenganNilai(minimalNilai_155, maksimalNilai_155);
                 break;
             case 4:
                 cout << "Masukkan NIM: ";
-                cin >> nim;
-                hashMap.hapusData(nim);
+                cin >> nim_155;
+                hashMap.hapusData(nim_155);
                 break;
             case 5:
                 cout << "Semua data mahasiswa:" << endl;
@@ -150,7 +150,7 @@ int main() {
                 cout << "Pilihan tidak valid" << endl;
                 break;
         }
-    } while (choice != 0);
+    } while (choice_155 != 0);
 
     return 0;
 }
