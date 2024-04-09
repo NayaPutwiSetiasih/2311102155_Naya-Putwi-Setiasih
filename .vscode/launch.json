@@ -33,8 +33,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/githup_laprak/2311102155_Naya-Putwi-Setiasih/Pertemuan4",
-      "program": "d:/githup_laprak/2311102155_Naya-Putwi-Setiasih/Pertemuan4/build/Debug/outDebug",
+      "cwd": "d:/githup_laprak/2311102155_Naya-Putwi-Setiasih/Pertemuan5",
+      "program": "d:/githup_laprak/2311102155_Naya-Putwi-Setiasih/Pertemuan5/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
