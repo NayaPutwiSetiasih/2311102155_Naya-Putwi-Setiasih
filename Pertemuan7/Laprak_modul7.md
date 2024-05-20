@@ -438,6 +438,7 @@ Dari implementasi struktur data antrian (queue) menggunakan linked list dalam ba
 2. Dalam program tersebut, operasi-operasi dasar seperti enqueue (penambahan elemen), dequeue (penghapusan elemen), serta operasi lainnya seperti pengecekan kosong (isEmpty), pengambilan ukuran (getSize), dan pengosongan antrian (clear) dapat diimplementasikan dengan mudah menggunakan konsep struktur data antrian.
 3. Implementasi menggunakan konsep linked list membuat kode menjadi lebih terstruktur dan mudah dibaca. Setiap operasi yang dilakukan terlihat jelas dan mudah dipahami.
 4. Dengan menggunakan struktur data antrian, program dapat dengan mudah diadaptasi untuk kasus penggunaan yang berbeda, seperti dalam contoh di atas yang mengelola antrian mahasiswa dengan menyimpan data nama dan NIM.
+
 Implementasi struktur data antrian menggunakan linked list memberikan fleksibilitas, efisiensi, dan keterbacaan dalam pengelolaan antrian dalam program C++.
 
 ## Referensi
